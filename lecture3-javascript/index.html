@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lecture 3：JavaScript 问候练习</title>
+</head>
+<body>
+  <h1>JavaScript：询问名字并问好</h1>
+  <p>点击按钮运行老师的课堂代码。会询问两次名字，第二次的回答用于问候语。</p>
+  <button type="button" id="start">开始练习</button>
+  <p>本练习仅将回答临时保存在变量中；不会把回答上传到 GitHub。</p>
+  <script>
+    document.getElementById("start").addEventListener("click", function () {
+      // 按老师截图保留四行代码。
+      var question = "What is your name?";
+      prompt(question);
+      var response = prompt(question);
+      alert("Hello " + response + ", have a nice day!");
+    });
+  </script>
+</body>
+</html>
